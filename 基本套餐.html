@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>手机号码验证</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+<script type="text/javascript">
+$(document).ready(function(){
+	/*$(".chaxun .submit").click(function(){
+		$(".xuanxiang").show();
+	});*/
+});
+</script>
+<style type="text/css">
+.taocan{
+	margin-top: 20px;
+	background-color: #f2f2f2;
+	height: 80px;
+	line-height: 80px;
+}
+.submit{
+	background-color: #eb4343;
+	color: #fff;
+}
+.nav-tabs {
+	border-bottom: 1px solid #F00;
+}
+.nav-tabs > li{
+	padding-right: 5px;
+}
+.nav-tabs li a{
+	border: 1px solid #F00;
+}
+.tabbable li.active a{
+	color: #fff;
+	background-color: #d62929;	
+}
+.tabbable li.active a:link{
+	color: #fff;
+	background-color: #d62929;	
+	border: 1px solid #F00;
+}
+.tabbable li.active a:visited{
+	color: #fff;
+	background-color: #d62929;	
+	border: 1px solid #F00;
+}
+.tabbable li.active a:hover{
+	color: #fff;
+	background-color: #d62929;	
+	border: 1px solid #F00;
+}
+.tabbable li.active a:active{
+	color: #fff;
+	background-color: #d62929;	
+	border: 1px solid #F00;
+}
+
+.tabbable li a{
+	color: #d62929;
+	background-color: #fff;	
+}
+.tabbable li a:link{
+	color: #d62929;
+	background-color: #fff;	
+	border: 1px solid #F00;
+}
+.tabbable li a:visited{
+	color: #d62929;
+	background-color: #fff;	
+	border: 1px solid #F00;
+}
+.tabbable li a:hover{
+	color: #d62929;
+	background-color: #fff;	
+	border: 1px solid #F00;
+}
+.tabbable li a:active{
+	color: #d62929;
+	background-color: #fff;	
+	border: 1px solid #F00;
+}
+.box{
+	border: 1px solid #ffc177;
+ 	padding: 20px;
+  	margin: 10px 0;
+}
+.tab-pane{
+	margin-top: 20px;
+}
+.yourInfo{
+	line-height: 50px;
+}
+.yourInfo span{
+	font-weight: bold;
+}
+.xuanxiang{
+	clear: both;
+	margin-top: 30px;
+}
+.chaxun{
+	text-align: left;
+}
+.liuliang{
+	clear: both;
+	padding-top: 30px;
+}
+.row_second{
+	margin-top: 15px;
+}
+.search{
+	font-weight: bold;
+	color: #ffa558;
+}
+table tr th,td{
+	text-align: center;
+}
+table thead {
+	color: #ffa558;
+	font-weight: bold;
+	background-color: #ffe9d8;
+}
+table tbody tr:nth-child(even){
+	background-color: #ffe9d8;
+}
+@media screen and (max-width: 1000px){
+	.phoneVerify form{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.howto{
+		text-align: center;
+		float: none;
+	}
+	.verify ul{
+		padding: 10px 0 10px 10px;
+	}
+}
+@media screen and (max-width: 480px){
+	.taocan{
+		margin-top: 20px;
+		background-color: #f2f2f2;
+		height: auto;
+	}
+	.taocan form{
+		margin-top: 20px;
+	}
+	.chaxun{
+		text-align: center;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="download">
+		<div class="container">
+			<ul class="pull-right">
+				<li><a href="#">手机端下载</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand col-xs-8" href="#"><img src="images/logo.jpg" alt=""></a>
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<div class="navbar-header navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="手机号码验证.html">实名认证</a></li>
+						<li class="active"><a href="基本套餐.html">业务查询</a></li>
+						<li><a href="商业合作.html">商业合作</a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">产品介绍</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="产品中心.html">短信</a></li>
+								<li><a href="产品介绍.html">MIBOX</a></li>
+							</ul>
+						</li>
+						<li><a href="公司介绍.html">公司介绍</a></li>
+						<li><a href="服务支持.html">服务支持</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav><!-- 导航 -->
+
+	<!-- 基本套餐 -->
+	<div class="container text-center taocan">
+		<!-- 输入手机号 -->
+		<form class="form-inline">
+			<div class="form-group col-md-6 col-xs-12" style="text-align: right;">
+				<input type="text" class="form-control" id="inputEmail3" placeholder="请输入短信验证手机号">
+			</div>
+
+			<div class="form-group col-md-6 col-xs-12 chaxun">
+				<a class="btn btn-default submit">查询</a>
+			</div>
+		</form>
+	</div>
+	<!-- 基本套餐 -->
+
+	<!-- 选项卡 -->
+	<div class="container xuanxiang">
+		<div class="tabbable" id="tabs-154198">
+			<ul class="nav nav-tabs">
+				<li class="active active2">
+					<a href="#panel-1" data-toggle="tab">基本套餐</a>
+				</li>
+				<li class="">
+					<a href="#panel-2" data-toggle="tab">查看订单</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="panel-1">
+					<div class="yourInfo">
+						<div class="name col-md-3">
+							<span>姓名：</span>吴铢
+						</div>
+						
+						<div class="mobile col-md-3">
+							<span>手机号：</span>18858290657
+						</div>
+
+						<div class="zhengjian col-md-3">
+							<span>证件号：</span>330103199211122019
+						</div>
+
+						<div class="zhengjian col-md-3">
+							<a class="btn btn-default" href="手机号码验证.html">实名认证</a>
+						</div>
+					</div>
+
+					<div class="yours">
+						<div class="col-md-6 col-xs-12 box">
+							<div class="row">
+								<span class="col-md-6">基本套餐</span><span class="col-md-6">6G/12月套餐</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用状态</span><span class="col-md-6">已使用</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用时间始</span><span class="col-md-6">2015-01-07</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐余量(MB)</span><span class="col-md-6">6137.26</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐时长</span><span class="col-md-6">2015-01-07~2016-01-06</span>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xs-12 box">
+							<div class="row">
+								<span class="col-md-6">基本套餐</span><span class="col-md-6">6G/12月套餐</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用状态</span><span class="col-md-6">已使用</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用时间始</span><span class="col-md-6">2015-01-07</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐余量(MB)</span><span class="col-md-6">6137.26</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐时长</span><span class="col-md-6">2015-01-07~2016-01-06</span>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xs-12 box">
+							<div class="row">
+								<span class="col-md-6">基本套餐</span><span class="col-md-6">6G/12月套餐</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用状态</span><span class="col-md-6">已使用</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用时间始</span><span class="col-md-6">2015-01-07</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐余量(MB)</span><span class="col-md-6">6137.26</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐时长</span><span class="col-md-6">2015-01-07~2016-01-06</span>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xs-12 box">
+							<div class="row">
+								<span class="col-md-6">基本套餐</span><span class="col-md-6">6G/12月套餐</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用状态</span><span class="col-md-6">已使用</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">使用时间始</span><span class="col-md-6">2015-01-07</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐余量(MB)</span><span class="col-md-6">6137.26</span>
+							</div>
+							<div class="row">
+								<span class="col-md-6">套餐时长</span><span class="col-md-6">2015-01-07~2016-01-06</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="panel-2">
+					<div class="data_choose text-center">
+						<div class="row">
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default">2015年5月</a>
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default">2015年5月</a>
+							</div>
+
+
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default">2015年5月</a>
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default">2015年5月</a>
+							</div>
+						</div>
+
+						<div class="row row_second">
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default">2015年5月</a>
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default">2015年5月</a>
+							</div>
+
+							<div class="col-md-3 col-xs-6">
+								<a class="btn btn-default search">查询</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="liuliang">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th>时间</th>
+									<th>已使用流量</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>2015-05-14</td>
+									<td>10.8285MB</td>
+								</tr>
+								<tr>
+									<td>2015-05-14</td>
+									<td>9.8285MB</td>
+								</tr>
+								<tr>
+									<td>2015-05-14</td>
+									<td>8.8285MB</td>
+								</tr>
+								<tr>
+									<td>2015-05-14</td>
+									<td>6.8285MB</td>
+								</tr>
+								<tr>
+									<td>2015-05-14</td>
+									<td>4.82MB</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 选项卡 -->
+
+	<!-- 版权导航 -->
+	<div class="footer">
+		<div class="container">
+			<!-- 底部导航 -->
+			<div class="col-md-6 col-xs-12 links">
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">新闻中心</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">诚聘英才</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div><!-- 底部导航 -->
+
+			<!-- 二维码 -->
+			<div class="col-md-6 col-xs-12 contact">
+				<div class="col-md-6 col-xs-6 phone">
+					400-025-1377<br>
+					周一至周日 9:00-22:00
+				</div>
+				<div class="col-md-6 col-xs-6 qcode">
+					<img src="images/qcode.jpg" alt="" class="pull-right">
+				</div>
+			</div><!-- 二维码 -->
+		</div>
+	</div><!-- 版权导航 -->
+
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+</html>

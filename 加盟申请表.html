@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>实名认证</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+<script type="text/javascript">
+
+</script>
+<style type="text/css">
+.cardVerify{
+	padding: 0 0;
+	margin-top: 10px;
+}
+.cardVerify form{
+	width: 60%;
+	margin: 0 auto;
+}
+.cardVerify .submit{
+	background-color: #eb4343;
+	color: #fff;
+}
+.cardImage img{
+	width: 60px;
+}
+.command h4 span{
+	color: #ef7474;
+}
+.commandList{
+	list-style: none;
+	padding-left: 30px;
+}
+@media screen and (max-width: 1000px){
+	.cardVerify form{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.howto{
+		text-align: center;
+		float: none;
+	}
+	.verify ul{
+		padding: 10px 0 10px 10px;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="download">
+		<div class="container">
+			<ul class="pull-right">
+				<li><a href="#">手机端下载</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand col-xs-8" href="#"><img src="images/logo.jpg" alt=""></a>
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<div class="navbar-header navbar-right">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">首页</a></li>
+						<li><a href="手机号码验证.html">实名认证</a></li>
+						<li><a href="基本套餐.html">业务查询</a></li>
+						<li><a href="商业合作.html">商业合作</a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">产品介绍</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="产品中心.html">短信</a></li>
+								<li><a href="产品介绍.html">MIBOX</a></li>
+							</ul>
+						</li>
+						<li><a href="公司介绍.html">公司介绍</a></li>
+						<li><a href="服务支持.html">服务支持</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav><!-- 导航 -->
+
+	<!-- banner -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<img src="images/banner.jpg" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/banner.jpg" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/banner.jpg" alt="">
+             </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div><!-- banner -->
+
+	<!-- 身份证 -->
+	<div class="container cardVerify">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				加盟申请表
+			</div>
+
+			<div class="panel-body" id="collapseExample">
+				<form class="form-horizontal">
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">身份证类型</label>
+						<div class="col-sm-8">
+							<select name="" id="">
+								<option value="">请选择类型</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">身份证类型</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">证件正面</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">证件反面</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">本人持证正面</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">本人持证正面</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" id="inputEmail3" placeholder="Email"></textarea> 
+						</div>
+					</div>
+
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-default submit">确定</button>
+						<button type="submit" class="btn btn-default submit">返回</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- 身份证 -->
+
+
+	<!-- 版权导航 -->
+	<div class="footer">
+		<div class="container">
+			<!-- 底部导航 -->
+			<div class="col-md-6 col-xs-12 links">
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">新闻中心</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">诚聘英才</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div><!-- 底部导航 -->
+
+			<!-- 二维码 -->
+			<div class="col-md-6 col-xs-12 contact">
+				<div class="col-md-6 col-xs-6 phone">
+					400-025-1377<br>
+					周一至周日 9:00-22:00
+				</div>
+				<div class="col-md-6 col-xs-6 qcode">
+					<img src="images/qcode.jpg" alt="" class="pull-right">
+				</div>
+			</div><!-- 二维码 -->
+		</div>
+	</div><!-- 版权导航 -->
+
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>相关信息</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+<script type="text/javascript">
+
+</script>
+<style type="text/css">
+.infoVerify{
+	padding: 0 0;
+	margin-top: 10px;
+}
+.infoVerify form{
+	width: 60%;
+	margin: 0 auto;
+}
+.infoVerify .submit{
+	background-color: #eb4343;
+	color: #fff;
+}
+@media screen and (max-width: 1000px){
+	.infoVerify form{
+		width: 98%;
+		margin: 0 auto;
+	}
+	.howto{
+		clear: both;
+		text-align: center;
+		float: none;
+		padding-top: 20px;
+	}
+	.verify ul{
+		padding: 10px 0 10px 10px;
+	}
+	.select_area .col-xs-4{
+		padding: 0;
+	}
+	.form-horizontal .form-group{}
+}
+</style>
+</head>
+<body>
+	<div class="download">
+		<div class="container">
+			<ul class="pull-right">
+				<li><a href="#">手机端下载</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand col-xs-8" href="#"><img src="images/logo.jpg" alt=""></a>
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<div class="navbar-header navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">首页</a></li>
+						<li class="active"><a href="手机号码验证.html">实名认证</a></li>
+						<li><a href="基本套餐.html">业务查询</a></li>
+						<li><a href="商业合作.html">商业合作</a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">产品介绍</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="产品中心.html">短信</a></li>
+								<li><a href="产品介绍.html">MIBOX</a></li>
+							</ul>
+						</li>
+						<li><a href="公司介绍.html">公司介绍</a></li>
+						<li><a href="服务支持.html">服务支持</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav><!-- 导航 -->
+
+	<!-- banner -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<img src="images/banner.jpg" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/banner.jpg" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/banner.jpg" alt="">
+             </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div><!-- banner -->
+
+	<!-- 认证  -->
+	<div class="container verify">
+		<div>
+			<ul>
+				<li>
+					注： 
+				</li>
+				<li>
+					1.请根据提示完成实名登记，完成后3-5个工作日内审核完毕。  
+				</li>
+				<li>
+					2.如需修改实名登记信息请联系客服电话:4006-123-579。  
+				</li>
+				<li>
+					3.3G上网卡不可拨打电话和收发短信，请用您已实名验证的其它手机号。  
+				</li>
+				<li>
+					4.外籍人士、港澳台人士、未到领取身份证年龄人士，请用大陆亲友身份证登记。  
+				</li>
+				<li>
+					5.任何人不得冒用他人证件和持证照片，否则可能触犯《中华人民共和国居民身份证法》第17条！  
+				</li>
+			</ul>
+		</div>
+
+		<form class="form-inline text-center rengzheng">
+			<div class="form-group">
+				<!-- <label for="exampleInputEmail2">Email</label> -->
+				<input type="email" class="form-control phoneNumber" id="exampleInputEmail2" placeholder="请输入您的上网卡号">
+			</div>
+
+			<button type="submit" class="btn btn-default verify_btn">实名认证</button>
+		</form>
+
+		<div class="error_message">
+			<div class="col-md-4 col-sm-4">
+				
+			</div>
+
+			<div class="col-md-8 col-sm-8">
+				</p><span class="yhh">用户号：</span>1408760980<br>
+				(资料已确认收到，1个工作日内完成审核，请自行测试使用情况)<br>
+				您实名信息上传时间：2015-05-14 10:04:40</p>
+				<span class="smxx">实名信息如下：</span>
+				<p><span>手机号：</span>185****7987</p>
+				<p><span>姓&nbsp;&nbsp;&nbsp;名</span>：吴铢</p>
+				<p><span>证件号：</span>4305***********3</p>
+			</div>
+		</div> 
+
+		<div class="howto">
+			<a href="">如何获取sim卡号和ip地址？</a>
+		</div>
+	</div>
+	<!-- 认证  -->
+
+	<!-- 相关信息 -->
+	<div class="container infoVerify">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				2.填写实名相关信息:
+			</div>
+
+			<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">使用者姓名：</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="请输入使用者姓名">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">身份证号码：</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="请输入身份证号码">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">住宅地址：</label>
+						<div class="col-sm-8 select_area">
+							<select name="" class="col-xs-4">
+								<option value="">请选择省份</option>
+							</select>
+							<select name="" class="col-xs-4">
+								<option value="">请选择市区</option>
+							</select>
+							<select name="" class="col-xs-4">
+								<option value="">请选择城区</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">街道地址：</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="请输入街道地址">
+						</div>
+					</div>
+
+					<div class="form-group text-center">
+						<a class="btn btn-default submit" href="证件审核.html">下一步</a>
+						<a class="btn btn-default submit" href="手机号码验证.html">返回</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- 相关信息 -->
+
+	<!-- 版权导航 -->
+	<div class="footer">
+		<div class="container">
+			<!-- 底部导航 -->
+			<div class="col-md-6 col-xs-12 links">
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">新闻中心</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">诚聘英才</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div><!-- 底部导航 -->
+
+			<!-- 二维码 -->
+			<div class="col-md-6 col-xs-12 contact">
+				<div class="col-md-6 col-xs-6 phone">
+					400-025-1377<br>
+					周一至周日 9:00-22:00
+				</div>
+				<div class="col-md-6 col-xs-6 qcode">
+					<img src="images/qcode.jpg" alt="" class="pull-right">
+				</div>
+			</div><!-- 二维码 -->
+		</div>
+	</div><!-- 版权导航 -->
+
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+</html>

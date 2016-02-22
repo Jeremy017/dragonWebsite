@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>产品中心</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+<script type="text/javascript">
+
+</script>
+<style type="text/css">
+.items{
+	background-color: #def3fb;
+}
+.items h4{
+	font-size: 18px;
+	font-weight: bold;
+}
+.items p{
+	font-size: 14px;
+}
+.advance{
+	background-color: #f2f2f2;
+	padding-top: 30px;
+}
+h4.media-heading{
+	font-weight: bold;
+}
+.itemView{
+	padding: 30px 0;
+}
+.listView{
+	padding: 30px 20px 30px 0;
+}
+.first{
+	padding-top: 30px;
+}
+.swiper-wrapper .swiper-slide:nth-child(odd){
+	background-color: #f2f2f2;
+}
+.swiper-wrapper .swiper-slide:nth-child(even){
+	background-color: #fff;
+}
+.users{
+	background-color: #e6e6e6;
+	padding-bottom: 30px;
+}
+.users h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+.users .company{
+	height: 53px;
+}
+.navbar-nav > li {
+	padding-right: 10px;
+}
+.navbar-nav .dropdown-menu{
+	min-width: 110px;
+	max-width: 120px;
+	top: 97%;
+	margin: 32px -13px 7px;
+}
+.navbar .nav > li:hover .dropdown-menu {
+	display: block;
+} 
+@media screen and (max-width: 1000px){
+	.itemView{
+		padding: 10px 0;
+	}
+	.listView{
+		padding: 10px;
+	}
+	.advance .row{
+		margin: 0;
+	}
+	.users h2{
+		font-size: 20px;
+	}
+	.company{
+		padding-top: 10px;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="download">
+		<div class="container">
+			<ul class="pull-right">
+				<li><a href="#">手机端下载</a></li>
+				<li><a href="#">登陆</a></li>
+				<li><a href="#">ENGLISH</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand col-xs-8" href="#"><img src="images/logo.jpg" alt=""></a>
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<div class="navbar-header navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="手机号码验证.html">实名认证</a></li>
+						<li><a href="基本套餐.html">业务查询</a></li>
+						<li><a href="商业合作.html">商业合作</a></li>
+						<li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">产品介绍</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="产品中心.html">短信</a></li>
+								<li><a href="产品介绍.html">MIBOX</a></li>
+							</ul>
+						</li>
+						<li><a href="公司介绍.html">公司介绍</a></li>
+						<li><a href="服务支持.html">服务支持</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav><!-- 导航 -->
+
+	<!-- banner -->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<img src="images/product/1.png" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/product/2.png" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/product/3.png" alt="">
+             </div>
+
+             <div class="swiper-slide">
+				<img src="images/product/4.png" alt="">
+             </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div><!-- banner -->
+
+	<!-- 套餐区域 -->
+	<div class="items text-center">
+		<div class="container">
+			<div class="col-md-3 itemView">
+				<img src="images/secure.png" alt="">
+				<h4>安全监控</h4>
+				<p>“五秒到”通道专门配备18台服务器支持运营，7*24小时人工后台监控</p>
+			</div>
+
+			<div class="col-md-3 itemView">
+				<img src="images/vibe.png" alt="">
+				<h4>专项通道</h4>
+				<p>“五秒到”通道专门配备18台服务器支持运营，7*24小时人工后台监控</p>
+			</div>
+
+			<div class="col-md-3 itemView">
+				<img src="images/technique.png" alt="">
+				<h4>技术保证</h4>
+				<p>“五秒到”通道专门配备18台服务器支持运营，7*24小时人工后台监控</p>
+			</div>
+
+			<div class="col-md-3 itemView">
+				<img src="images/operation.png" alt="">
+				<h4>团队运营</h4>
+				<p>“五秒到”通道专门配备18台服务器支持运营，7*24小时人工后台监控</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 龙腾优势 -->
+	<div class="advance">
+		<div class="container">
+			<div class="row title">
+				<img src="images/advance.png" alt="" width="100%">
+			</div>
+
+			<div class="row first">
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/1.png" alt="" class="media-object">
+							</a>
+						</div>
+
+						<div class="media-body">
+							<h4 class="media-heading">联系人管理</h4>
+							<p>对联系人建组并设置详细信息，方便联 系人分类查找，提高发送效率</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/2.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">多种发送模式</h4>
+							<p>可立即发送，也可指定时刻或定时循环 发送，短信发送时机由您掌握</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/3.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">SDK短信接口</h4>
+							<p>企业可通过短信接口实现对短信群发系 统的二次开发，完善企业应用</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/4.png" alt="" class="media-object">
+							</a>
+						</div>
+
+						<div class="media-body">
+							<h4 class="media-heading">账户明细查询</h4>
+							<p>平台详细记录短信充值，账户及发送 详情，所有数据一目了然</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/5.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">5秒到达</h4>
+							<p>全行业第一个敢担保5秒到达的通 道商，一触即发（2~5秒即发即到）</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/6.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">到达率</h4>
+							<p>六年短信行业运营与技术积累，我 们对每一条短信验证码负责。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/7.png" alt="" class="media-object">
+							</a>
+						</div>
+
+						<div class="media-body">
+							<h4 class="media-heading">实现双向收发</h4>
+							<p>支持手机回复短信，双向变流，让沟 通更便利</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/8.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">即时状态报告</h4>
+							<p>短信下发后系统将即时反馈状态报告， 返回状态为成功时方产生计费</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/9.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">独立端口速度快</h4>
+							<p>独立使用，一客一签行业端口，流 速最少可达500条/秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/10.png" alt="" class="media-object">
+							</a>
+						</div>
+
+						<div class="media-body">
+							<h4 class="media-heading">三网合一</h4>
+							<p>中国移动、中国联通、中国电信三网 合一，支持短信双向收发</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/11.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">接口号码更正规</h4>
+							<p>判断短信平台是否正规的最简单方法 就是看手机端接收显示的号码</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 listView">
+					<div class="media">
+						<div class="media-left">
+							<a href="">
+								<img src="images/advance/12.png" alt="" class="media-object">
+							</a>
+						</div>
+						
+						<div class="media-body">
+							<h4 class="media-heading">多通道备份</h4>
+							<p>数十条短信通道由专业的技术高效率 把关，突破性海量发送</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 谁在用龙腾 -->
+	<div class="users text-center">
+		<div class="container">
+			<h2>他们都在使用龙腾验证码</h2>
+
+			<div class="col-md-2 col-xs-6 company">
+				<img src="images/whouse/1.png" alt="">
+			</div>
+
+			<div class="col-md-2 col-xs-6 company">
+				<img src="images/whouse/2.png" alt="">
+			</div>
+
+			<div class="col-md-2 col-xs-6 company">
+				<img src="images/whouse/3.png" alt="">
+			</div>
+
+			<div class="col-md-2 col-xs-6 company">
+				<img src="images/whouse/4.png" alt="">
+			</div>
+
+			<div class="col-md-2 col-xs-6 company">
+				<img src="images/whouse/5.png" alt="">
+			</div>
+
+			<div class="col-md-2 col-xs-6 company">
+				<img src="images/whouse/6.png" alt="">
+			</div>
+		</div>
+	</div><!-- 谁在用龙腾 -->
+
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+</html>

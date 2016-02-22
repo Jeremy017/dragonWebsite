@@ -1,0 +1,229 @@
+*{
+	padding: 0;	
+	margin: 0;	
+	font-family: "微软雅黑";
+}
+.container{
+	width: 1000px;
+}
+/* 顶部 */
+.download{
+	height: 36px;
+	line-height: 36px;
+	background-color: #f2f2f2;
+}
+.download ul{
+	list-style: none;
+	margin-bottom: 0;
+}
+.download ul li{
+	float: left;
+	padding: 0 10px 0 0;
+}
+.download ul li a{
+	color: #937f6a;
+}
+/* 顶部 */
+
+/* logo、导航 */
+.navbar {
+	clear: both;
+    margin-bottom: 0;
+    height: 110px;
+}
+.navbar-default{
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle{
+	margin-top:35px;
+}
+.navbar-brand{
+	padding: 0;
+	margin-top: 30px;
+}
+.navbar-collapse{
+	margin-top: 30px;
+}
+.navbar-default .navbar-nav a{
+	background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a{
+	background-color: transparent;
+	color: #d73329;
+}
+.navbar-nav > li {
+	padding-right: 10px;
+}
+.navbar-nav .dropdown-menu{
+	min-width: 110px;
+	max-width: 120px;
+	top: 97%;
+	margin: 32px -13px 7px;
+}
+.navbar .nav > li:hover .dropdown-menu {
+	display: block;
+} 
+/* logo、导航 */
+
+/* 轮播 */
+.swiper-container {
+    width: 1000px;
+    margin: 0 auto; 
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+	width: 100%;
+}
+/* 轮播 */
+
+/* 验证 */
+.verify{
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+}
+.verify ul{
+	padding: 10px 0 10px 30px;
+	list-style: none;
+}
+.verify ul li{
+	font-size: 14px;
+	line-height: 25px;
+}
+.verify_btn{
+	background-color: #eb4343;
+	color: #fff;
+	font-size: 18px;
+	border-radius:10px;
+}
+.rengzheng{
+	margin-top: 30px;
+}
+.error_message{
+	font-size: 14px;
+	line-height: 25px;
+	margin-top: 20px;
+}
+.error_message p {
+	margin-bottom: 0;
+}
+.error_message span{
+	color: #000;
+	font-weight: bold; 
+}
+.error_message span.yhh{
+	color:#f5c754;
+	font-size: 16px;
+}
+.error_message span.smxx{
+	color:#f5c754;
+	font-size: 16px;
+}
+.phoneNumber{
+	border-radius:10px;
+	height: 39px;
+}
+.howto{
+	padding: 10px 5px;
+	float: right;
+}
+.howto a{
+	color: #ec5656;
+}
+/* 验证 */
+
+/* footer */
+.footer{
+	height: 210px;
+	background-color: #de3a3f;
+	margin-top: 20px;
+}
+.footer ul{
+	list-style: none;
+}
+.footer ul li{
+	float: left;
+	padding: 0 10px 0 0;
+}
+.footer ul li a{
+	color: #fff;
+	font-size: 14px;
+}
+.footer .phone{
+	color: #fff;
+	font-size: 18px;
+}
+.footer .container{
+	padding-left: 2%;
+}
+.footer .col-md-6{
+	padding-left: 0px;
+}
+.links{
+	padding-top: 20px;
+}
+.contact{
+	padding-top: 20px;
+}
+.footer .links{
+	padding-left: 1%;
+}
+/* footer */
+
+@media screen and (max-width: 600px){
+	
+	.footer .qcode img{
+		height: 70px;
+		width: 70px;
+	}
+
+}
+@media screen and (max-width: 1000px){
+	
+	.container{
+		width: 100%;
+	}
+	.swiper-container{
+		width: 100%;
+	}
+
+	.navbar {
+		clear: both;
+	    margin-bottom: 0;
+	    height: auto;
+	}
+	.navbar-default{
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle{
+		margin-top: 10px;
+	}
+	.navbar-brand{
+		margin-top: 0;
+	}
+	.navbar-collapse{
+		margin-top: 0;
+	}
+	
+	.footer .phone{
+		color: #fff;
+		font-size: 14px;
+	}
+}

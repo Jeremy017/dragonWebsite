@@ -1,0 +1,252 @@
+.section{
+    text-align: center;
+}
+body{
+    background: #ececec;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+#wifiDevice{
+    position: absolute;
+    top: 19%;
+    right:0;
+    z-index: 99999;
+}
+#fullpage{display: none}
+
+.index_page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    /*background: #000000 url("../images/front_bg.jpg") top center no-repeat;*/
+    z-index: 9999;
+}
+#outside_svg{
+    position: absolute;
+    top: 19%;
+    right: 0%;
+}
+#inside_svg{
+    position: absolute;
+    top: 19%;
+    right: 0%;
+}
+#front_line{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -415px;
+    display: none;
+}
+#section11,
+#section44,
+#section55,
+#section33{
+    background-size: cover;
+}
+#front_phone,
+#behind_phone,
+#first_text,
+/*#second_text,*/
+#second_phone2,
+#second_glasses,
+#second_computer,
+#second_camera,
+#second_pad,
+#second_phone,
+/*#third_text,*/
+#third_phone,
+#third_info,
+/*#fourth_text,*/
+/*#fourth_info,*/
+#fourth_phone,
+/*#fourth_world,*/
+/*#fifth_text,*/
+#fifth_cloud,
+#fifth_card{
+    position: absolute;
+}
+#section11{
+    /*background: url("../images/first_point_bg.png") center no-repeat;*/
+    /* background: url("../images/first_bg22.jpg") top center no-repeat; */
+    z-index: 4;
+}
+#section22{
+    background: url("../images/fifth_bg.png") center bottom no-repeat;
+    /*background-size: 800px auto;*/
+    z-index: 5;
+}
+#section33{
+    background: url("../images/fourth_bg.jpg") top center no-repeat;
+    z-index: 6;
+}
+#section44{
+    background: url('../images/second_bg.jpg') bottom center no-repeat;
+    z-index: 7;
+}
+#section55{
+    background: url("../images/third_bg.jpg") top center no-repeat;
+    z-index: 8;
+}
+#front_phone{
+    top: 19%;
+    right: 0%;
+    z-index: 1;
+    display: none;
+}
+#first_text{
+    top: 250px;
+    left: 3%;
+    display: none;
+}
+
+#section44 img,
+#section55 img{
+    text-align: center;
+    margin: 0 auto;
+}
+#second_text{
+    padding-top: 150px;
+    text-align: center;
+}
+
+#second_phone2{
+    top: 70%;
+    left: -100%;
+}
+#second_glasses{
+    top: -100%;
+    left: -100%;
+}
+#second_computer{
+    top: -350%;
+    left: 50%;
+    margin-left: -146px;
+}
+#second_camera{
+    top: -100%;
+    left: 100%;
+}
+#second_pad{
+    top: 67%;
+    left: 100%;
+}
+#second_phone{
+    top: 100%;
+    left: 43%;
+    margin-left: -110px;
+    z-index: 3;
+}
+#third_text{
+    width: 600px;
+    padding-top: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#third_phone{
+    top:100%;
+    left: 10%;
+}
+
+#third_info{
+    bottom: 3%;
+    right: -30%
+}
+
+#fourth_text{
+    padding-top: 150px;
+    text-align: center;
+}
+#fourth_info{
+    padding-top: 25px;
+    text-align: center;
+}
+
+#fourth_world{
+    padding-top: 30px;
+    z-index: 1;
+
+}
+#fourth_world img{
+    margin: 0 auto;
+}
+#fourth_phone{
+    top: 100%;
+    left: 29.3%;
+    margin-left: -170px;
+    z-index: 5;
+}
+
+em.c1, em.c2{
+    width: 1000px;
+    height: 1000px;
+    left: 50%;
+    top: 200px;
+    margin-left: -500px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 80px rgba(46,112,158,.8) inset;
+    -moz-box-shadow: 0 0 80px rgba(46,112,158,.8) inset;
+    -ms-box-shadow: 0 0 80px rgba(46,112,158,.8) inset;
+    box-shadow: 0 0 80px rgba(46,112,158,.8) inset;
+    opacity: 0;
+}
+em.c1{
+    -webkit-animation:radar-ant1 infinite 3s 0.01s linear;
+    -moz-animation:radar-ant1 infinite 3s 0.01s linear;
+    -ms-animation:radar-ant1 infinite 3s 0.01s linear;
+}
+em.c2{
+    -webkit-animation: radar-ant1 infinite 3s 1.5s linear;
+    -moz-animation: radar-ant1 infinite 3s 1.5s linear;
+    -ms-animation: radar-ant1 infinite 3s 1.5s linear;
+}
+em{width: 50px; height: 50px; overflow: hidden; position: absolute; z-index: 1}
+@-webkit-keyframes radar-ant1{
+    0%{-webkit-transform: scale(.3); opacity: 0;}
+    10%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{-webkit-transform: scale(1.1); opacity: 0;}
+}
+@-moz-keyframes radar-ant1{
+    0%{-moz-transform: scale(.3); opacity: 0;}
+    10%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{-moz-transform: scale(1.1); opacity: 0;}
+}
+@-ms-keyframes radar-ant1{
+    0%{-ms-transform: scale(.3); opacity: 0;}
+    10%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{-ms-transform:scale(1.1); opacity:0;}
+}
+
+#fifth_text{
+    /*top: 20%;*/
+    /*left: 50%;*/
+    padding-top: 150px;
+    /*margin-left: -275px;*/
+
+    text-align: center;
+}
+#fifth_cloud{
+    top: 100%;
+    left: 50%;
+    z-index: 60;
+    opacity: 0;
+}
+#fifth_card{
+    top: 100%;
+    left: 50%;
+    z-index: 50;
+    opacity: 0;
+}
+#fifth_card img{
+    opacity: 0;
+}
